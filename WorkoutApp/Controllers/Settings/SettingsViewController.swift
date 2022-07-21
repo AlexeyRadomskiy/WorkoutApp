@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: - SettingsViewController
 
-class SettingsViewController: BaseViewController {
+class SettingsViewController: WABaseViewController {
 
 }
 

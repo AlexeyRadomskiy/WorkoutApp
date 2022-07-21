@@ -2,11 +2,10 @@ import UIKit
 
 // MARK: - WeekView
 
-final class WeekView: BaseView {
+final class WeekView: WABaseView {
 	
 	// MARK: - Properties
 	
-	private let calendar = Calendar.current
 	private let stackView = UIStackView()
 }
 
@@ -37,9 +36,9 @@ extension WeekView {
 		stackView.spacing = 7.0
 		stackView.distribution = .fillEqually
 		
-		var weekdays = calendar.shortStandaloneWeekdaySymbols
+		var weekdays = Date.calendar.shortStandaloneWeekdaySymbols
 		
-		if calendar.firstWeekday == 2 {
+		if Date.calendar.firstWeekday == 2 {
 			let sunday = weekdays.remove(at: 0)
 			weekdays.append(sunday)
 		}

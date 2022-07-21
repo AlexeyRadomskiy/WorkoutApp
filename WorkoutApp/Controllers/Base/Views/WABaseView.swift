@@ -1,8 +1,8 @@
 import UIKit
 
-// MARK: - BaseView
+// MARK: - WABaseView
 
-class BaseView: UIView {
+class WABaseView: UIView {
 	
 	// MARK: - Init
 	
@@ -21,7 +21,7 @@ class BaseView: UIView {
 
 // MARK: - Objc extension
 
-@objc extension BaseView {
+@objc extension WABaseView {
 	
 	func setupViews() {}
 	func constraintViews() {}

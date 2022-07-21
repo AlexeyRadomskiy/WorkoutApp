@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: - OverviewViewController
 
-class OverviewViewController: BaseViewController {
+class OverviewViewController: WABaseViewController {
 	
 	// MARK: - Properties
 	

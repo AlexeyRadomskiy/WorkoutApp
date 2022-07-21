@@ -15,3 +15,18 @@ enum NavBarPosition {
 	case left
 	case right
 }
+
+// MARK: - WAButtonType
+
+public enum WAButtonType {
+	case primary
+	case secondary
+}
+
+// MARK: - TimerState
+
+enum TimerState {
+	case isRunning
+	case isPaused
+	case isStopped
+}

@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: - ProgressViewController
 
-class ProgressViewController: BaseViewController {
+class ProgressViewController: WABaseViewController {
 	
 }
 

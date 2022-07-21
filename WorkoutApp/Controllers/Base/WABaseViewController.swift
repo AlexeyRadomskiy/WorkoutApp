@@ -1,8 +1,8 @@
 import UIKit
 
-// MARK: - BaseViewController
+// MARK: - WABaseViewController
 
-class BaseViewController: UIViewController {
+class WABaseViewController: UIViewController {
 	
 	// MARK: - Life cycles
 	
@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
 
 // MARK: - Objc extension
 
-@objc extension BaseViewController {
+@objc extension WABaseViewController {
 	
 	func setupViews() {}
 	
@@ -38,7 +38,7 @@ class BaseViewController: UIViewController {
 
 // MARK: - Extension
 
-extension BaseViewController {
+extension WABaseViewController {
 	
 	func addNavBarItem(at position: NavBarPosition, with title: String) {
 		let button = UIButton(type: .system)
@@ -54,6 +54,17 @@ extension BaseViewController {
 		case .right:
 			button.addTarget(self, action: #selector(navBarRightButtonHandler), for: .touchUpInside)
 			navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
+		}
+	}
+	
+	func setTitleForNavBarButton(_ title: String, at position: NavBarPosition) {
+		switch position {
+		case .left:
+			(navigationItem.leftBarButtonItem?.customView as?
+			 UIButton)?.setTitle(title, for: .normal)
+		case .right:
+			(navigationItem.rightBarButtonItem?.customView as?
+			 UIButton)?.setTitle(title, for: .normal)
 		}
 	}
 }
