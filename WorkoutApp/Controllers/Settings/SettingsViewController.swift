@@ -3,7 +3,12 @@ import UIKit
 // MARK: - SettingsViewController
 
 class SettingsViewController: WABaseViewController {
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
 
+		title = R.Strings.NavBar.settings
+	}
 }
 
 // MARK: - Extension
@@ -23,6 +28,5 @@ extension SettingsViewController {
 	override func configureAppearance() {
 		super.configureAppearance()
 		
-		title = R.Strings.NavBar.settings
 	}
 }

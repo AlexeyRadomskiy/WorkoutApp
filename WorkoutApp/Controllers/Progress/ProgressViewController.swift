@@ -4,6 +4,10 @@ import UIKit
 
 class ProgressViewController: WABaseViewController {
 	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+	}
 }
 
 // MARK: - Extension
@@ -24,7 +28,7 @@ extension ProgressViewController {
 		super.configureAppearance()
 		
 		title = R.Strings.NavBar.progress
-		navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: Tabs.progress)
+		navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .progress)
 		
 		addNavBarItem(at: .left, with: R.Strings.Progress.navBarLeft)
 		addNavBarItem(at: .right, with: R.Strings.Progress.navBarRight)
