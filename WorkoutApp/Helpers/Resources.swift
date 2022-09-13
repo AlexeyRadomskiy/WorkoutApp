@@ -49,6 +49,9 @@ enum R {
 			
 			static let elapsedTime = "Elapsed Time"
 			static let remainingTime = "Remaining Time"
+			
+			static let completedTitle = "COMPLETED"
+			static let remainingTitle = "REMAINIG"
 		}
 		
 		enum Progress {

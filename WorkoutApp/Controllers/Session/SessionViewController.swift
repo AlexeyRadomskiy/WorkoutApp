@@ -8,7 +8,7 @@ class SessionViewController: WABaseViewController {
 	
 	private let timerView = TimerView()
 	
-	private let timerDuration = 3.0
+	private let timerDuration = 15.0
 	
 	// MARK: - Methods
 	
@@ -65,5 +65,11 @@ extension SessionViewController {
 		addNavBarItem(at: .right, with: R.Strings.Session.navBarFinish)
 		
 		timerView.configure(with: timerDuration, progress: 0.0)
+		
+		timerView.callBack = { [weak self] in
+			DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+				self?.navBarRightButtonHandler()
+			}
+		}
 	}
 }

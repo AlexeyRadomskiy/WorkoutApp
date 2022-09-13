@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6CAA20DB2889D7F000DAE02A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA20DA2889D7F000DAE02A /* TimerView.swift */; };
 		6CAA20DD2889D84A00DAE02A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA20DC2889D84A00DAE02A /* ProgressView.swift */; };
+		6CC1DD0828D065B3006D0578 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1DD0728D065B3006D0578 /* PercentView.swift */; };
 		6CFC05292882B6390035900C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC05282882B6390035900C /* AppDelegate.swift */; };
 		6CFC052B2882B6390035900C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC052A2882B6390035900C /* SceneDelegate.swift */; };
 		6CFC052D2882B6390035900C /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC052C2882B6390035900C /* OverviewViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		6CAA20DA2889D7F000DAE02A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6CAA20DC2889D84A00DAE02A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		6CC1DD0728D065B3006D0578 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		6CFC05252882B6390035900C /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFC05282882B6390035900C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFC052A2882B6390035900C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				6CAA20DA2889D7F000DAE02A /* TimerView.swift */,
 				6CAA20DC2889D84A00DAE02A /* ProgressView.swift */,
+				6CC1DD0728D065B3006D0578 /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				6CFC05652882EA390035900C /* WeekView.swift in Sources */,
 				6CFC05472882B9670035900C /* Resources.swift in Sources */,
 				6CFC05492882B9DE0035900C /* Enums.swift in Sources */,
+				6CC1DD0828D065B3006D0578 /* PercentView.swift in Sources */,
 				6CFC05292882B6390035900C /* AppDelegate.swift in Sources */,
 				6CFC05572882C5A20035900C /* SessionViewController.swift in Sources */,
 				6CFC055E2882D8E00035900C /* WAButton.swift in Sources */,
